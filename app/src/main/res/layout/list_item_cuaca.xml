@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back_1"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
@@ -13,75 +13,31 @@
         android:layout_margin="16dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_margin="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/cloudy_sunny" />
-
-        <TextView
-            android:id="@+id/textInformationToday"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Moscow Cloudy"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            />
-
-        <TextView
-            android:id="@+id/textCelcius"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:textSize="43sp"
-            android:text="25`"
-            android:layout_marginTop="4dp"/>
-
-        <TextView
-            android:id="@+id/textViewHours"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:layout_marginTop="5dp"
-            android:textSize="16sp"
-            android:text="h:27" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="16dp"
-                android:layout_weight="0.333"
+                android:layout_weight="0.8"
                 android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageUmbarella"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/umbrella" />
-
                 <TextView
-                    android:id="@+id/textPercentRainfall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="24%"
-                    android:textAlignment="center"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/textRainfall"
+                    android:id="@+id/tv_TittlePredection"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/example"
-                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tv_DatePredection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_publish"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -89,79 +45,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="16dp"
-                android:layout_weight="0.333"
+                android:layout_weight="0.2"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageWind"
+                    android:id="@+id/imageIconPredection"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/wind" />
-
-                <TextView
-                    android:id="@+id/textPersentWind"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="27%"
-                    android:textAlignment="center"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/textWind"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/example"
-                    android:textAlignment="center"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:layout_weight="0.333"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageHumadity"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/humidity" />
-
-                <TextView
-                    android:id="@+id/textPersentHumadity"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="17%"
-                    android:textAlignment="center"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/textHumadity"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/example"
-                    android:textAlignment="center"
-                    android:textColor="@color/white" />
+                    app:srcCompat="@drawable/cloudy" />
             </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:background="@drawable/background_2"
-            android:text="View Detail" />
     </LinearLayout>
 </LinearLayout>

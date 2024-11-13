@@ -6,7 +6,6 @@ import retrofit2.await
 
 class WeatherRepository(
     private val apiService: ApiService
-
 ) {
     suspend fun getAllWeather(adm4: String): WeatherResponse{
         return apiService.getWeatherForecast(adm4).await()

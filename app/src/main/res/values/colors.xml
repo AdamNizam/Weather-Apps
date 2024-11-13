@@ -5,5 +5,6 @@
     <color name="white_1">#F4F6FF</color>
     <color name="back_1">#1a2332</color>
     <color name="back_2">#161c2a</color>
-    <color name="yello">#fdd020</color>
+    <color name="yellow">#fdd020</color>
+    <color name="highlight_color">#FF4081</color>
 </resources>

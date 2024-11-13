@@ -4,4 +4,6 @@
     <string name="next_week">Next Week</string>
     <string name="example">Example</string>
     <string name="date">Date</string>
+    <string name="date_publish">Date Publish</string>
+    <string name="view_detail">View Detail</string>
 </resources>
